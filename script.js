@@ -16,6 +16,11 @@ document.querySelectorAll('.comments form').forEach(form => {
   });
 });
 
+// Dark mode toggle
+document.getElementById('toggle-dark').addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
+
 
 window.addEventListener('scroll', revealPosts);
 window.addEventListener('load', revealPosts);
