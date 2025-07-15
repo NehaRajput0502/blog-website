@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Blog</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
   <header>
@@ -19,6 +20,24 @@
   </header>
 
   <main>
+    <!-- Post 1 -->
+    <article id="post1" class="blog-post fade-in">
+      <h2>Exploring the Mountains <span class="badge">Adventure</span></h2>
+      <p class="date">Published on: July 10, 2025</p>
+      <img src="https://via.placeholder.com/800x400" alt="Mountains">
+      <p>Discover the serenity and thrill of mountain adventures. From snow-capped peaks to lush green trails, every hike offers a unique story...</p>
+      
+      <section class="comments">
+        <h3>Comments</h3>
+        <form data-post="post1">
+          <input type="text" name="name" placeholder="Your name" required>
+          <textarea name="message" placeholder="Your comment" required></textarea>
+          <button type="submit">Post Comment</button>
+        </form>
+        <div class="comment-list" id="comments-post1"></div>
+      </section>
+    </article>
+
   </main>
 
   <footer>
