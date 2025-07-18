@@ -3,7 +3,7 @@
 ## Project Folder Structure
 
 ```
-/blog-website/
+/blog-website/.
 ├── README.md
 ├── index.html
 ├── styles.css
