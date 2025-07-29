@@ -8,23 +8,54 @@
 </head>
 <body>
   <header>
+    <div class="header-container">
     <h1>My Blog</h1>
+    <button id="toggle-dark">Change Mode</button>
+    </div>
     <nav>
+        
       <ul>
         <li><a href="#post1">Post 1</a></li>
         <li><a href="#post2">Post 2</a></li>
         <li><a href="#post3">Post 3</a></li>
       </ul>
     </nav>
-    <button id="toggle-dark">Toggle Dark Mode</button>
+  
   </header>
 
   <main>
     <!-- Post 1 -->
     <article id="post1" class="blog-post fade-in">
-      <h2>Exploring the Mountains <span class="badge">Adventure</span></h2>
+      <h2 style="font-family: 'MyCustomFont'">Exploring the Mountains <span class="badge">Adventure</span></h2>
       <p class="date">Published on: July 10, 2025</p>
-      <img src="https://via.placeholder.com/800x400" alt="Mountains">
+      <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="/home/neha/Downloads/mountain1.jpg" alt="Mountains" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="/home/neha/Downloads/mountain2.jpg" alt="Mountains" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="/home/neha/Downloads/mountain3.jpg" alt="Mountains" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
       <p>Discover the serenity and thrill of mountain adventures. From snow-capped peaks to lush green trails, every hike offers a unique story...</p>
       
       <section class="comments">
@@ -40,7 +71,7 @@
 
     <!-- Post 2 -->
     <article id="post2" class="blog-post fade-in">
-      <h2>The Beauty of Ocean Life <span class="badge">Nature</span></h2>
+      <h2 style="font-family: 'MyCustomFont'">The Beauty of Ocean Life <span class="badge">Nature</span></h2>
       <p class="date">Published on: July 5, 2025</p>
       <img src="https://via.placeholder.com/800x400" alt="Ocean">
       <p>Explore the vibrant world under the sea. Coral reefs, colorful fishes, and mysterious creatures await divers and ocean lovers alike...</p>
@@ -58,7 +89,7 @@
 
     <!-- Post 3 -->
     <article id="post3" class="blog-post fade-in">
-      <h2>Urban Gardening Tips <span class="badge">Lifestyle</span></h2>
+      <h2 style="font-family: 'MyCustomFont'">Urban Gardening Tips <span class="badge">Lifestyle</span></h2>
       <p class="date">Published on: June 30, 2025</p>
       <img src="https://via.placeholder.com/800x400" alt="Gardening">
       <p>Learn how to grow your own vegetables and flowers even in a small city apartment. Urban gardening is fun and therapeutic...</p>
